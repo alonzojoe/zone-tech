@@ -43,12 +43,13 @@ const Navbar = () => {
         <div>
           <ul className="flex gap-4">
             {menus.map((menu) => (
-              <li>
+              <li key={menu.id}>
                 <a
                   href={menu.path}
-                  className="inline-block py-2 px-2 text-xl group relative hover:text-secondary"
+                  className="inline-block py-2 mx-2 text-xl group relative hover:text-secondary"
                 >
                   {menu.title}
+                  <div className="absolute h-0.5 left-0 bottom-0.5 w-full bg-secondary scale-x-0 group-hover:scale-100 transition-transform duration-200 origin-left"></div>
                 </a>
               </li>
             ))}
