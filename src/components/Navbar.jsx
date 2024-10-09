@@ -1,5 +1,6 @@
+import { useState } from "react";
 import Logo from "../assets/images/logo.png";
-import { IoMdMenu } from "react-icons/io";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 const menus = [
   {
@@ -35,8 +36,14 @@ const menus = [
 ];
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev);
+  };
+
   return (
-    <nav className="relative z-20">
+    <nav className="relative">
       <div className="container flex items-center justify-between py-10">
         <div>
           <img className="h-[66px] w-[231px]" src={Logo} alt="zone-tech-logo" />
@@ -57,9 +64,36 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="lg:hidden">
-          <IoMdMenu className="text-4xl cursor-pointer" />
+          <IoMdMenu className="text-4xl cursor-pointer" onClick={toggleMenu} />
         </div>
       </div>
+
+      {isOpen && (
+        <div
+          className={`fixed inset-0 bg-white bg-opacity-90 flex flex-col items-center justify-start z-50 
+    transition-opacity duration-500 ease-in-out ${
+      isOpen ? "opacity-100" : "opacity-0"
+    }`}
+        >
+          <IoMdClose
+            className="absolute top-8 right-8 text-4xl cursor-pointer"
+            onClick={toggleMenu}
+          />
+          <ul className="text-center mt-32">
+            {menus.map((menu) => (
+              <li key={menu.id} className="mb-8">
+                <a
+                  href={menu.path}
+                  className="inline-block text-2xl font-semibold group relative hover:text-secondary"
+                >
+                  {menu.title}
+                  <div className="absolute h-0.5 left-0 bottom-0.5 w-full bg-secondary scale-x-0 group-hover:scale-100 transition-transform duration-200 origin-left"></div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };
