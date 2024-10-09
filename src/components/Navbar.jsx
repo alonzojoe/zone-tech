@@ -1,4 +1,5 @@
 import Logo from "../assets/images/logo.png";
+import { IoMdMenu } from "react-icons/io";
 
 const menus = [
   {
@@ -40,7 +41,7 @@ const Navbar = () => {
         <div>
           <img className="h-[66px] w-[231px]" src={Logo} alt="zone-tech-logo" />
         </div>
-        <div>
+        <div className="hidden lg:block">
           <ul className="flex gap-4">
             {menus.map((menu) => (
               <li key={menu.id}>
@@ -54,6 +55,9 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+        </div>
+        <div className="lg:hidden">
+          <IoMdMenu className="text-4xl cursor-pointer" />
         </div>
       </div>
     </nav>
