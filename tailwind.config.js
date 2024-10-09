@@ -12,6 +12,8 @@ export default {
         dark: "#222224",
         lighter: "#696984",
         light: "#FEFAF5",
+        muted: "#9C9C9C",
+        yellow: "#FBC400",
       },
       container: {
         center: true,

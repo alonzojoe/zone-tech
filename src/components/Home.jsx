@@ -1,4 +1,8 @@
+import { FaStar } from "react-icons/fa6";
 import HeroImg from "../assets/images/hero.png";
+import customerOne from "../assets/images/rev1.png";
+import customerTwo from "../assets/images/rev2.png";
+import customerThree from "../assets/images/rev3.png";
 const Home = () => {
   return (
     <section className="bg-light overflow-hidden">
@@ -15,6 +19,33 @@ const Home = () => {
             </p>
             <div>
               <button className="primary-btn drop-shadow">Explore</button>
+            </div>
+            <div className="flex gap-4 justify-center md:justify-start">
+              <div className="flex">
+                <img
+                  src={customerOne}
+                  alt="customer-1"
+                  className="w-[60px] relative z-10 rounded-full"
+                />
+                <img
+                  src={customerTwo}
+                  alt="customer-2"
+                  className="w-[60px] relative z-20 -ml-7 rounded-full"
+                />
+                <img
+                  src={customerThree}
+                  alt="customer-3"
+                  className="w-[60px] relative z-30 -ml-7 rounded-full"
+                />
+              </div>
+              <div className="flex flex-col justify-center">
+                <h4 className="text-base font-semibold">Customer Review</h4>
+                <div className="flex gap-2 items-center">
+                  <FaStar className="text-yellow" />
+                  <span className="text-sm">4.8</span>
+                  <span className="text-muted">(5k reviews)</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
