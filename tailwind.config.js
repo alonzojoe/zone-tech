@@ -15,6 +15,7 @@ export default {
         muted: "#9C9C9C",
         yellow: "#FBC400",
         barrier: "#C2C2C2",
+        lightest: "#80819A"
       },
       container: {
         center: true,
