@@ -11,7 +11,7 @@ const Brands = () => {
       <div className="container py-14 md:py-24">
         <div className="flex justify-center items-center gap-4">
           <FaChevronLeft className="text-primary text-2xl" />
-          <p className="text-2xl font-semibold">
+          <p className="text-2xl font-semibold text-center">
             Trusted by <span className="text-secondary">100+ Companies</span>{" "}
             Worldwide
           </p>
