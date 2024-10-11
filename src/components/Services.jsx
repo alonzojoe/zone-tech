@@ -18,8 +18,8 @@ const Services = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 py-24 space-y-8 md:space-y-0">
-          <div className="relative z-0">
-            <div className="flex flex-col bg-white items-center justify-center p-4 px-7 space-y-8 rounded-xl relative z-20 border-[1px] border-transparent hover:border-barrier">
+          <div className="relative z-0 shadow-lg rounded-xl">
+            <div className="bg-white flex flex-col items-center justify-center p-4 px-7 space-y-8 rounded-xl relative z-20 border-[1px] border-transparent hover:border-barrier">
               <div className="h-[100px] w-[100px] bg-primary rounded-full flex items-center justify-center absolute z-30 -top-14">
                 <FaShopify className="text-white text-5xl" />
               </div>
@@ -41,8 +41,8 @@ const Services = () => {
               className="absolute -bottom-5 -left-10 w-[198px] h-auto"
             />
           </div>
-          <div className="relative z-0">
-            <div className="flex flex-col bg-white items-center justify-center relative p-4 px-7 space-y-8 rounded-xl z-20 border-[1px] border-transparent hover:border-barrier">
+          <div className="relative z-0 shadow-lg rounded-xl">
+            <div className="bg-white flex flex-col items-center justify-center relative p-4 px-7 space-y-8 rounded-xl z-20 border-[1px] border-transparent hover:border-barrier">
               <div className="h-[100px] w-[100px] bg-secondary rounded-full flex items-center justify-center absolute z-30 -top-14">
                 <BsRocketTakeoffFill className="text-white text-5xl" />
               </div>

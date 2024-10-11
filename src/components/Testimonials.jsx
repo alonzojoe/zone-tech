@@ -16,15 +16,32 @@ const Testimonials = () => {
             text ever since the 1500s
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 py-14">
-          <div>A</div>
-          <div className="flex flex-col justify-center items-center relative z-10">
-            <img
-              src={TestimonialsImg}
-              alt="testimonials-hero"
-              className="w-[200px] xl:w-[400px]"
-            />
-            <div className="absolute -bottom-20 left-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 py-14 space-y-8 md:space-y-0">
+          <div className="flex flex-col justify-center">
+            <div className="text-center md:text-left  space-y-12">
+              <h2 className="text-4xl text-primary font-semibold">
+                What They Say?
+              </h2>
+              <p className="text-lighter text-lg">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s
+              </p>
+              <p className="text-lighter text-lg">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum
+              </p>
+              <p className="text-lighter text-lg">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-center items-center relative z-20">
+            <div className="flex flex-col justify-center items-center relative z-10">
+              <img src={TestimonialsImg} alt="testimonials-hero" className="" />
+            </div>
+            <div className="absolute -bottom-20 left-32 z-20">
               <div className="rounded-2xl bg-white border-[1px] p-6 border-barrier relative overflow-hidden">
                 <div className="absolute top-0 left-0 h-full w-4 bg-secondary rounded-l-2xl"></div>
                 <div className="ml-4">
