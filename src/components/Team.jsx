@@ -2,6 +2,7 @@ import Member1 from "../assets/images/member1.png";
 import Member2 from "../assets/images/member2.png";
 import Member3 from "../assets/images/member3.png";
 
+import Paginator from "./Paginator";
 const Team = () => {
   return (
     <section>
@@ -58,7 +59,7 @@ const Team = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center items-center"></div>
+        <Paginator />
       </div>
     </section>
   );
