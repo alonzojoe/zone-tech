@@ -5,6 +5,7 @@ import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Culture from "./components/Culture";
 import Team from "./components/Team";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Testimonials />
       <Culture />
       <Team />
+      <Contact />
     </main>
   );
 }

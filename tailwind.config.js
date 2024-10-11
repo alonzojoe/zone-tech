@@ -17,6 +17,7 @@ export default {
         barrier: "#C2C2C2",
         lightest: "#80819A",
         foam: "#E8E8E8",
+        lightBarrier: "#CECECE",
       },
       container: {
         center: true,
