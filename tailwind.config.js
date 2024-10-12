@@ -18,6 +18,7 @@ export default {
         lightest: "#80819A",
         foam: "#E8E8E8",
         lightBarrier: "#CECECE",
+        lightPink: "#F0DCFF",
       },
       container: {
         center: true,
