@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <footer>
       <div className="container py-14">
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="flex flex-col justify-center space-y-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="flex flex-col space-y-6">
             <img
               className="h-[66px] w-[231px]"
               src={Logo}
@@ -34,9 +34,105 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div>
-            <div>
-              <div></div>
+          <div className="flex justify-between">
+            <div className="my-6">
+              <a href="#" className="text-2xl text-secondary relative">
+                About Us
+                <div className="absolute h-0.5 left-0 -bottom-1 w-4/6 scale-100 bg-secondary"></div>
+              </a>
+              <ul className="py-8 space-y-2">
+                <li>
+                  <a href="#" className="text-lighter text-lg">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-lighter text-lg">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-lighter text-lg">
+                    How We Work
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-lighter text-lg">
+                    Our Team
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-lighter text-lg">
+                    Careers
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-lighter text-lg">
+                    blog
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="my-6">
+              <a href="#" className="text-2xl text-secondary relative">
+                Location
+                <div className="absolute h-0.5 left-0 -bottom-1 w-4/6 scale-100 bg-secondary"></div>
+              </a>
+              <ul className="py-8 space-y-2">
+                <li>
+                  <a href="#" className="text-lighter text-lg">
+                    230, 3891 Ranchview, California 62639
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-lighter text-lg">
+                    230, 3891 Ranchview, California 62639
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-lighter text-lg">
+                    230, 3891 Ranchview, California 62639
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="my-6">
+              <a href="#" className="text-2xl text-secondary relative">
+                Contact
+                <div className="absolute h-0.5 left-0 -bottom-1 w-4/6 scale-100 bg-secondary"></div>
+              </a>
+              <ul className="py-8 space-y-2">
+                <li>
+                  <a href="#" className="text-lighter text-lg">
+                    +91 85225 85225
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-lighter text-lg">
+                    +91 94064 78893
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-lighter text-lg">
+                    Zontech@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-lighter text-lg">
+                    Our Team
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-lighter text-lg">
+                    Careers
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-lighter text-lg">
+                    blog
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
